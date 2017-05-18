@@ -1,0 +1,21 @@
+<!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+<!--
+    <link rel="canonical" href="{{ site.url }}">
+    -->
+
+<!-- Facebook Open Graph -->
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ site.name }}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:url" content="{{ site.baseurl }}">
+<meta property="og:image" content="{{ site.baseurl }}/{{ site.images_path }}/twitter-card.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ site.title }}">
+<meta name="twitter:description" content="{{ site.description }}">
+<meta name="twitter:url" content="{{ site.baseurl }}">
+<meta name="twitter:image:src" content="{{ site.baseurl }}/{{ site.images_path }}/twitter-card.jpg">
+<meta name="twitter:image:alt" content="{{ site.description }}">
+<meta name="twitter:site" content="@{{ site.twitter }}">

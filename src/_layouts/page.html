@@ -1,0 +1,18 @@
+---
+layout: default
+class: 'page-template'
+---
+<!-- < default -->
+{% include shared/header.html %}
+<!-- page -->
+<main class="content" role="main">
+    <article class="post">
+        <header class="post-header">
+            <h1 class="post-title">{{ page.title }}</h1>
+        </header>
+        <section class="post-content">
+            {{content}}
+        </section>
+    </article>
+</main>
+<!-- /page -->

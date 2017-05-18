@@ -1,0 +1,16 @@
+---
+layout: default
+cover: 'cover2.jpg'
+class: 'tag-template'
+navigation: True
+current: tag
+---
+<!-- < default -->
+{% include shared/header-tag.html %}
+<!-- The main content area -->
+<main id="content" class="content" role="main">
+
+    <!-- The tag below includes the post loop - partials/loop.hbs -->
+    {% include loop.html %}
+
+</main>

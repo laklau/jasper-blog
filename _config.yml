@@ -1,14 +1,23 @@
 # Jykell configuration
-#markdown: redcarpet
-#highlighter: pygments
-markdown: kramdown
-highlighter: rouge
-paginate: 5
-language: 'en-uk'
 
-# Website info
-name: 'Finding The Way Home'
+# Site settings
+baseurl: ""
+url:
+short_url:
+lang: 'en-uk'
+google_analytics:
+disqus: username
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+
+# Site info
+name: Jasper
+mobile_name: Jasper
+title: 'Finding The Way Home'
 description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
+logo: ghost.png
+email:
+color: #bb00bb
+twitter:
 
 # Author's info
 author: 'Casper McFadden'
@@ -16,19 +25,35 @@ author: 'Casper McFadden'
 nickname: casper
 bio: 'A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.'
 location: 'Maine, USA'
-url: 'http://biomadeira.github.io/jasper/'
-image: 'assets/images/casper.png'
+author_image: 'casper.png'
 
-short_url: 'biomadeira.github.io/jasper/'
-google_analytics: UA-69281367-1
-disqus: username
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /jasper/
+# Where things are
+source: src
+destination:
+fonts_path: assets/styles
+images_path: assets/images
+scripts_path: assets/scripts
+styles_path: assets/styles
 
-# Permalinks
-permalink: /:title
-# permalink: /author/:username
-# permalink: /tag/:tag
+# Collections
+collections:
+  home:
+    output: false
+
+# Handling Reading
+encoding: "utf-8"
+markdown_ext: "md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+
+# Outputting
+#permalink:
+paginate: 5
+paginate_path: "/page:num/"
+timezone: Europe/Madrid
+
 
 
 # gems and other configs
@@ -44,25 +69,8 @@ exclude: [vendor]
 # ...
 
 
-# Settings for builing master branch with travis-ci
-# with jekyll-travis
 
-# Settings for deploy rake task
-# Username and repo of Github repo, e.g.
-# https://github.com/USERNAME/REPO.git
-# username defaults to ENV['GIT_NAME'] used by Travis
-# repo defaults to USERNAME.github.io
-# Branch defaults to "source" for USERNAME.github.io
-# or "master" otherwise
-safe: false
-lsi: false
-username: biomadeira
-repo: jasper
-branch: master
-relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url:  https://biomadeira.github.io/jasper/
-source_url:      https://github.com/biomadeira/jasper/
+
 
 exclude:
   - README.md

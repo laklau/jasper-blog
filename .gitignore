@@ -4,6 +4,7 @@ github
 # Jekyll build
 /_site/
 .jekyll-metadata
+.sass-cache
 Gemfile.lock
 
 # webstorm

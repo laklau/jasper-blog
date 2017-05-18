@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "ca" }}">
+
+    {% include shared/head.html %}
+
+  <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %} nav-closed">
+
+    {% include shared/navigation.html %}
+
+    <div class="site-wrapper">
+
+        <!-- [[! Everything else gets inserted here ]] -->
+        {{ content }}
+
+        {% include shared/footer.html %}
+
+    </div>
+
+    {% include shared/scripts.html %}
+
+    <!-- Add Google Analytics  -->
+    {% if jekyll.environment == "production" and site.google_analytics %}
+    {% include shared/analytics.html %}
+    {% endif %}
+
+  </body>
+</html>
