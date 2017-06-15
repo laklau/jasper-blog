@@ -54,11 +54,19 @@ paginate: 5
 paginate_path: "/page:num/"
 timezone: Europe/Madrid
 
-
-
 # gems and other configs
-gems: [jekyll-paginate]
-exclude: [vendor]
+gems:
+  - jekyll-paginate
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
 
 # Additional settings available on the front-matter
 # Site logo in the index.html (as in demo.ghost.io)

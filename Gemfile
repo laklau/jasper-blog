@@ -1,9 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.4.3"
-#gem "rdiscount", "~> 2.1.7"
-#gem "pygments.rb", "~> 0.6.3"
-#gem 'kramdown', '~> 1.8'
-#gem 'rouge', '~> 1.10', '>= 1.10.1'
-gem "github-pages", "~> 66"
-gem "rake", "~> 10.1.1"
+gem "jekyll", "3.4.3"
+gem "jekyll-paginate", "1.1.0", group: :jekyll_plugins
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
